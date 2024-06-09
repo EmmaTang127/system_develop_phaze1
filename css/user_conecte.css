@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monomaniac+One&family=Zen+Maru+Gothic:wght@400&display=swap');
+
+.bungee {
+  font-family: "Bungee", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body{
+  background-color:#F7FFF7 ;
+  text-align: center;
+}
+
+h1{
+  margin: 0;
+  font-size: 80px;
+  color: #77B06E;
+}
+
+#user_item{
+  width: 70vw;
+  margin: auto;
+}
+
+input{
+  width: 40vw;
+  height: 5vh;
+  padding: 5px;
+  padding-left: 20px;
+  border: 3px solid #64B264;
+  border-radius: 40px;
+  margin-bottom: 30px;
+  font-family: 'Zen Maru Gothic', sans-serif;
+  font-size: 1em;
+}
+
+::placeholder{
+  color: #64b264b7;
+}
+
+/* 生年月日 */
+.user_Birth{
+  color: #64b264b7;
+  position: relative;
+}
+
+input[type="date" i]::-webkit-calendar-picker-indicator{
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+}
+
+input[type="checkbox"]{
+  width: 30px;
+  margin: 0 10px;
+  border-radius: 50%;
+}
+
+#user_Admin{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  font-family: 'Zen Maru Gothic', sans-serif;
+  color: #454545;
+}
+
+#conecte_Btn{
+  width: 150px;
+  height: 8vh;
+  margin-top: 2vh;
+  background-color: #C0F7C0;
+  color: #498B49;
+  border: none;
+  border-radius: 40px;
+}
+
+#conecte_Btn:hover{
+  box-shadow: 2px 2px 5px #a3d8a3;
+}
+
+#return_Btn{
+  width: 150px;
+  height: 8vh;
+  margin-top: 2vh;
+  margin-right: 20px;
+  background-color: #f7c0c0;
+  color: #8b4949;
+  border: none;
+  border-radius: 40px; 
+
+}
+#return_Btn:hover{
+  box-shadow: 2px 2px 5px #a3d8a3;
+}
+
+#buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.login_item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.error {
+  color: red;
+}

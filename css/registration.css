@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Monomaniac+One&family=Zen+Maru+Gothic:wght@400;700&display=swap');
+
+body{
+  background-color:#F7FFF7 ;
+  margin: 0;
+}
+
+/* main */
+main{
+  text-align: center;
+}
+
+h1{
+  font-family: 'Zen Maru Gothic', serif;
+  text-align: center;
+  color: #6d9d66;
+  font-weight: 700;
+  font-size: 60px;
+  margin-top: 10vh;
+}
+
+.select_Situation{
+  width: 290px;
+  height: 50px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  padding: 0;
+  text-align: center;
+  font-family: 'Zen Maru Gothic', serif;
+  font-size: 24px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  border: 2px solid #64B264;
+}
+
+option{
+  margin-bottom: 10px;
+}
+
+.comment{
+  width: 490px;
+  height: 205px;
+  padding: 10px 15px;
+  margin-bottom: 50px;
+  text-align: left;
+  font-family: 'Zen Maru Gothic', serif;
+  font-size: 24px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  border: 2px solid #64B264;
+  resize: none;
+}
+
+.registration_Btn{
+  width: 25vw;
+  height: 8vh;
+  background-color: #C0F7C0;
+  color: #498B49;
+  font-family: 'Zen Maru Gothic', serif;
+  font-size: 24px;
+  border: none;
+  border-radius: 40px;
+}
+
+.registration_Btn:hover{
+  box-shadow: 2px 2px 5px #a3d8a3;
+}

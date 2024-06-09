@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Monomaniac+One&family=Zen+Maru+Gothic:wght@400;700&display=swap');
+
+body{
+  font-family: 'Zen Maru Gothic', serif;
+
+  background-color:#F7FFF7 ;
+  margin: 0;
+}
+
+/* メニュー */
+#menu{
+  height: 60px;
+  position: absolute;
+  top: 30px;
+  right: 0px;
+  background-color: #FFFDC8;
+  border: #C6BF01 3px solid;
+  border-right: none;
+  border-radius: 20px 0 0 20px;
+}
+
+/* メニューボタンの上にマウスを置くと色が変わる */
+#menu:hover {
+  background-color:#d1cc2bbc
+}
+
+#menu_bar{
+  width: 30px;
+  text-align: center;
+  margin: 17px 10px 0 10px;
+}
+
+/* main */
+main{
+  text-align: center;
+}
+
+h1{
+  font-family: 'Zen Maru Gothic', serif;
+  text-align: center;
+  color: #6d9d66;
+  font-weight: 700;
+  font-size: 60px;
+  margin-top: 10vh;
+}
+
+/* 自分の登録状況 */
+#mysafety{
+  width: 600px;
+  height: 85px;
+  margin: 0 auto;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  color: #454545;
+  background-color: #ffffff;
+  border-radius: 40px;
+  /* border: 2px solid #64B264; */
+}
+
+#safety_color{
+  width: 45px;
+  height: 45px;
+  /* background-color: #9FFF78;  登録状況によって色を変える */
+  border-radius: 50%;
+}
+
+#myName{
+  font-family: 'Zen Maru Gothic', serif;
+  width: 200px;
+  height: 40px;
+  margin: 0 20px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 24px;
+  /* background-color: #D5FFCB; */
+  border-radius: 40px;
+  border: none;
+}
+
+#mycomment{
+  width: 240px;
+  height: 65px;
+  padding-top: 0;
+  padding-left: 10px;
+  margin: 1vh 0;
+  text-align: left;
+  font-family: 'Zen Maru Gothic', serif;
+  font-size: 14px;
+  /* background-color: #D5FFCB; */
+  border-radius: 20px;
+  border: none;
+  resize: none;
+}
+
+
+/* selectタグ */
+#Select{
+  width: 300px;
+  margin: 50px auto;
+  background-color: #ffffff;
+  border-radius: 40px;
+  /* border: 2px solid #64B264; */
+}
+
+#Safety_select{
+  width: 250px;
+  height: 50px;
+  text-align: center;
+  font-family: 'Zen Maru Gothic', serif;
+  font-weight: 700;
+  font-size: 1em;
+  color: #454545;
+  border-radius: 40px;
+  border: none;
+  outline: none;
+  appearance: none;
+}
+
+  /* 矢印のスタイル */
+  #Safety_select {
+    background-image: url(/img/arrow.png);
+    background-position: right 20px center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+}
+
+/* 安否リスト */
+#Safety_List{
+  color: #454545;
+  width: 85vw;
+  margin: auto;
+}
+
+.Safety_List{
+  height: 700px;
+  margin-top: 10vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  text-align: center;
+  border-radius: 40px;
+  border: 2px solid #64B264;
+}
+
+/* リストのスタイル */
+.list_view{
+  width: 300px;
+  height: 50px;
+  margin-top: 30px;
+  margin-left: 15px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 40px;
+  border: 2px solid #64B264;
+}
+
+.list_color{
+  width: 25px;
+  height: 25px;
+  margin: 0;
+  background-color: #9FFF78;  /* 登録状況によって色を変える */
+  border-radius: 50%;
+}
+
+.list_Name{
+  font-family: 'Zen Maru Gothic', serif;
+  width: 100px;
+  height: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+  font-size: 12px;
+  background-color: #D5FFCB;
+  border: none;
+  border-radius: 40px;
+}
+
+.list_comment{
+  width: 125px;
+  height: 35px;
+  padding-top: 0;
+  padding-left: 10px;
+  text-align: left;
+  font-family: 'Zen Maru Gothic', serif;
+  font-size: 8px;
+  background-color: #D5FFCB;
+  border-radius: 20px;
+  border: none;
+  resize: none;
+}
+
+/* 隠れるサイドバーの内容 */
+/* サイドバーの仕様 */
+.sidebar {
+  position: fixed;
+  top: 30px;
+  right: -250px; /* 最初画面の右に隠れる */
+  width: auto;
+  height: auto;
+  background-color: #FFFDC8;
+  transition: right 0.3s ease;  /* スライドインの効果 */
+  z-index: 999;
+  border: #C6BF01 3px solid;
+  border-right: none;
+  border-radius: 20px 0 0 20px;
+}
+
+.show-sidebar {
+  right: 0;
+}
+
+/* 内容のコンテナ */
+.sidebar_content {
+  width: 160px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 閉じるボタン仕様 */
+.sidebarClose{
+  margin: 15px auto;
+  width: 14px;
+}
+
+/* メニューの仕様 */
+#menu_content {
+  text-align: center;
+  font-family: 'Zen Maru Gothic', serif;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+#menu_content div{
+  margin-bottom: 5px;
+}
+
+#menu_content a:hover {
+  background-color: #d1cc2bbc;
+}
+
+#menu_content a{
+  width: 150px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+#menu_content a:link {
+  color: #b3ad01;
+}
+
+#menu_content a:visited {
+  color: #b3ad01;
+}
+
+
+/* ダイアログ */
+dialog{
+  width: 430px;
+  position: absolute;
+  top: 50%;
+  font-family: 'Zen Maru Gothic', serif;
+  border: 2px solid #64B264;
+  border-radius: 40px;
+}
+
+#detail{
+  text-align: left;
+}
+
+.dialog_item{
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #454545;
+}
+
+#dialog_header span {
+  font-size: 20px;
+  font-weight: 700;
+  margin-right: 20px;
+}
+
+#dialog_header{
+  text-align: center;
+margin-bottom: 30px;
+}
+
+.dialog_main{
+  margin-left: 25px;
+}
+
+.color_g{
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  background-color: #9FFF78;  /* 登録状況によって色を変える */
+  border-radius: 50%;
+}
+
+.dialog_safety{
+  display: flex;
+  align-items: center;
+}
+
+dialog .safety{
+  color: #9FFF78;
+  margin-left: 15px;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.dialog_content{
+  display: flex;
+  margin: 7px 0;
+}
+
+.line{
+  width: 5px;
+  height: 130px;
+  margin: 0 16px;
+  /* background: linear-gradient(#9FFF78, #FFF178);  線のグラデーション */
+  border-radius: 5px;
+}
+
+.dialog_content_items {
+  margin-top: 3px;
+  margin-left: 40px;
+}
+
+.dialog_content_items .comment{
+  width: 150px;
+  padding: 5px;
+  background-color: #D5FFCB;
+  border-radius: 13px;
+}
+
+/*
+  状況毎に色のパターンを設定する
+*/
+/* リストのテーマ */
+.danger_color {
+  border-radius: 40px;
+  border: 2px solid #E44F4F
+}
+.danger_color .list_view {
+  border-radius: 40px;
+  border: 2px solid #E44F4F
+}
+.danger_color .status_color {
+  background-color: #FF7878;
+}
+.danger_color .item_color {
+  background-color: #FFCBCB;
+}
+
+.caution_color {
+  border-radius: 40px;
+  border: 2px solid #E4D54F
+}
+.caution_color .list_view{
+  border-radius: 40px;
+  border: 2px solid #E4D54F
+}
+.caution_color .status_color {
+  background-color: #FFF178;
+}
+.caution_color .item_color {
+  background-color: #FBFFCB;
+}
+
+.safe_color {
+  border-radius: 40px;
+  border: 2px solid #64B264;
+}
+.safe_color .list_view{
+  border-radius: 40px;
+  border: 2px solid #64B264;
+}
+.safe_color .status_color {
+  background-color: #9FFF78;
+}
+.safe_color .item_color {
+  background-color: #D5FFCB;
+}
+
+.unregistered_color {
+  border-radius: 40px;
+  border: 2px solid #858585;
+}
+.unregistered_color .list_view{
+  border-radius: 40px;
+  border: 2px solid #858585;
+}
+.unregistered_color .status_color {
+  background-color: #C1C1C1;
+}
+.unregistered_color .item_color {
+  background-color: #DBDBDB;
+}
+
+/* ダイアログのテーマ */
+.Danger_dialog_color .color_g {
+  background-color: #FF7878;
+}
+.Danger_dialog_color .safety {
+  color: #FF7878;
+}
+.Danger_dialog_color .comment {
+  background-color: #FFCBCB;
+}
+
+.Caution_dialog_color .color_g {
+  background-color: #FFF178;
+}
+.Caution_dialog_color .safety {
+  color: #FFF178;
+}
+.Caution_dialog_color .comment {
+  background-color: #FBFFCB;
+}
+
+.Safe_dialog_color .color_g {
+  background-color: #9FFF78;
+}
+.Safe_dialog_color .safety {
+  color: #9FFF78;
+}
+.Safe_dialog_color .comment {
+  background-color: #D5FFCB;
+}
+
+.Unregistered_dialog_color .color_g {
+  background-color: #C1C1C1;
+}
+.Unregistered_dialog_color .safety {
+  color: #C1C1C1;
+}
+.Unregistered_dialog_color .comment {
+  background-color: #DBDBDB;
+}
+
+/*
+  安否状況の円アイコンの色パターン
+*/
